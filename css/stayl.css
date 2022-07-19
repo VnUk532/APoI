@@ -1,0 +1,221 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+*,
+*:before
+*:after{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+/*CONTAINER*/
+.container{
+  width: 100%;
+  max-width: 1600px;
+  margin: 0
+}
+/*INTRO*/
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),
+  url(https://dwweb.ru/__img/css/slide/about-bg.jpg) center no-repeat;
+  -webkit-background-size:cover;
+  background-size:cover;
+}
+.intro_inner{
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+}
+.intro_suptitel{
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}
+.intro_titel {
+  color: #fff;
+  padding: 30px;
+  font-size: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  text-transform: uppercase;
+  line-height: 1;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.intro_titel:hover{
+  color: orange;
+}
+/*HEADER*/
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header_logo{
+  padding-left: 25px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.header_logo:hover{
+  color: orange;
+}
+.header_inner{
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+/*NAV*/
+.nav{
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.nav_link{
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 30px;
+  margin: 0 5px;
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+  transition: color .4s linear
+}
+.nav_link:after {
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  transition: opacity .4s linear
+}
+.nav_link:hover{
+  color: orange;
+}
+.nav_link:hover:after{
+  display: block;
+  background-color: #fff;
+  opacity: 1;
+}
+/*BUTTON*/
+.btn {
+  width:50px;
+  text-align:center;
+  font-family: arial;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 15px;
+  border: #fff 1px solid;
+  color: #fff;
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 20px auto;
+  transition: .5s;
+  border-radius: 0px;
+}
+.btn:hover {
+  top: 15px;
+  transition: .5s;
+  color: orange;
+  border:orange 1px solid;
+  border-radius: 10px;
+}
+.btn:active {
+  color: orange;
+  border: orange 2px solid;
+  transition: .07s;
+  background-color: #orange;
+}
+/*SECTION*/
+.section{
+  padding: 70px 0;
+
+}
+.section_header{
+  width: 100%;
+  margin: 0  auto 40px;
+  text-align: center;
+}
+.section_siptitle{
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+.section_titel{
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+.section_text{
+  font-size: 15px;
+  text-align: center;
+  color: #999;
+}
+/*IMG*/
+.img{
+  margin: auto;
+  display:block;
+  width: 75%;
+  height: 50vh;
+  max-width: 800px;
+  background: #fff url(ipj/compan.jpg) top center repeat-y;
+  background-size: 100%;
+  image-rendering: -webkit-optimize-contrast;
+}
+/*Footer*/
+.footer{
+  position:absolute;
+  width:100%;
+  height:100px;
+  background-color: #999;
+}
+hr{
+  margin: -30px auto 10px;
+  padding: 0px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
+  width: 95%;
+}
+.cont{
+  padding-top: 30px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.number{
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 30px;
+  margin: 0 5px;
+  color: #333;
+  position: relative;
+  text-decoration: none;
+}
